@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button 
+      defaultHref="/"
+      text=""
+      color="light">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Confirmar Asistencia a Cita</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h1 style="text-align: center; margin-top: 10px; font-weight: bolder; font-size: larger;">Descargue y Escanee el código QR para confirmar cita:</h1>  
+  <ion-card>
+    <ion-img src="assets/qr.PNG"></ion-img>
+  </ion-card>
+
+  <div style="text-align: center; padding-bottom: 20px; margin-top: 30px;">
+    <ion-button (click)="cancelar()" fill="solid" shape="round" class="boton">
+      Cancelar Cita
+    </ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="font-bold text-2xl">Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card  class="animate-fade-up animate-once animate-duration-500 animate-ease-out">
+    <ion-card-header>
+      <ion-card-title>Inicia sesión en CSP Pacientes App</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list lines="none">
+        <ion-item>
+          <ion-input type="email" label="Email:" labelPlacement="floating" placeholder="Ingrese su correo electrónico..."
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" label="Contraseña:" labelPlacement="floating" placeholder="Ingrese su contraseña..."
+          ></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+    <div style="text-align: center; padding-bottom: 20px;">
+      <ion-button (click)="enviar()" fill="solid" shape="round" class="boton">
+        Iniciar Sesión
+      </ion-button>
+    </div>
+  </ion-card>
+</ion-content>

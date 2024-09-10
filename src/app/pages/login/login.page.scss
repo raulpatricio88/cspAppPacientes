@@ -1,0 +1,23 @@
+ion-toolbar {
+    --background: #1B177F;
+    --color: #BFD42F;
+  
+    --border-color: #7473B6;
+    --border-width: 4px 0;
+    --border-style: double;
+  
+    --min-height: 80px;
+    --padding-top: 20px;
+    --padding-bottom: 20px;
+    --text-align: center;
+  }
+
+ion-content {
+     --background: #BFD42F;
+}
+
+ion-input{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  color: #fa7203;
+}

@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button 
+      defaultHref="/"
+      text=""
+      color="light">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Reserva de hora</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="animate-fade-up animate-once animate-duration-500 animate-ease-linear">
+    <ion-card-header>
+      <ion-card-title>Reservar hora:</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list lines="none">
+        <ion-item>
+          <ion-input type="email" label="Ingrese Email:" labelPlacement="floating"
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Elija Categoría:</ion-label>
+          <ion-select placeholder="Elija una..." [(ngModel)]="opcion">
+            <ion-select-option value="consulta">Consulta Médica</ion-select-option>
+            <ion-select-option value="examen">Exámenes</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+    <div style="text-align: center; padding-bottom: 20px;">
+      <ion-button (click)="consultar()" fill="solid" shape="round" class="boton">
+        Consultar Horas
+      </ion-button>
+    </div>
+  </ion-card>
+</ion-content>
