@@ -1,7 +1,0 @@
-{
-  "name": "cspPacienteApp",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
